@@ -20,13 +20,16 @@ B. Use
 	3. Launch game
 
 C. How to make a GUI MOD?
+	
 	This is more complicated.  I suggest looking at the source and/or use a decompiler on Keen's *.dll.
+	
 	I provided a very simple example, which just enables the toolbar and nothing else.
 		Look at CharacterHud
 		
 	The sky is the limit.
 
 D. How does this work?
+	
 	Basically I create an empty Screen right after a game-session starts.  That screen then loads new Huds through the HudManager interface.
 
 E. What could go wrong?
@@ -40,9 +43,13 @@ E. What could go wrong?
 	3. I've noticed some weird behavior will the toolbar due to the way its handled on a per-session basis.  My apologies if your settings get wiped.
 	
 F. Why?
+	
 	I wanted a better gui / system to control power.  In order to do that I needed to make a new Power tab, which meant modding the GUI.
 
 G. Where To?
+	
 	I would like to clean-up the too-permissive Ilchecker permissions and expand my MyGuiGateway class.
+	
 	Hopefully, if I can clean-up / create an API Keen will make the necessary permissions changes and this plugin will become obsolete.
+	
 	Maybe start putting out some GUI guide information, since this is a fairly dark area for modding.
